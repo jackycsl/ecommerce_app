@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/otp/otp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app/components/custom_svg_icon.dart';
 import 'package:ecommerce_app/components/default_button.dart';
@@ -51,7 +52,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           DefaultButton(
             text: "continue",
             press: () {
-              if (_formKey.currentState.validate()) {}
+              if (_formKey.currentState.validate()) {
+                Navigator.pushNamed(context, OtpScreen.routeName);
+              }
             },
           )
         ],
