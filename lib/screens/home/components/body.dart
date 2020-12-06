@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'categories.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
+import 'special_offers.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -17,6 +18,8 @@ class Body extends StatelessWidget {
             DiscountBanner(),
             SizedBox(height: getProportionateScreenWidth(20)),
             Categories(),
+            SizedBox(height: getProportionateScreenWidth(20)),
+            SpecialOffers()
           ],
         ),
       ),
